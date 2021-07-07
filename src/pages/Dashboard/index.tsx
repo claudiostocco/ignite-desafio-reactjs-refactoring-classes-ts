@@ -6,15 +6,7 @@ import ModalEditFood from '../../components/ModalEditFood';
 import { FoodsContainer } from './styles';
 import { useState } from 'react';
 import { useEffect } from 'react';
-
-interface FoodType {
-  id: number
-  name: string
-  description: string
-  price: number
-  available: boolean
-  image: string
-}
+import { FoodType } from '../../types'
 
 function Dashboard() {
   const [foods, setFoods] = useState<FoodType[]>([])
